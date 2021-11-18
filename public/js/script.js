@@ -3,7 +3,7 @@ let title = document.getElementById("title");
 let user = document.getElementById("user");
 let updateBtn = document.getElementById("updateBtn");
 
-const server_uri = "http://localhost:3001/todos";
+const server_uri = "https://todo-app-with-nodejs.herokuapp.com/todos";
 
 // For deleting
 let deleteBtn = document.getElementById("deleteBtn");

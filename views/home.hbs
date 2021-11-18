@@ -1,0 +1,29 @@
+<div class="container">
+  {{#if todoList}}
+    {{#each todoList as |list|}}
+      <div class="todo">
+        <h3>{{list.title}}</h3>
+        <p>{{list.user}}</p>
+        <div class="buttons">
+          <a class="btn" href="/todos/edit/{{list._id}}">Edit</a>
+          <button
+            class="btn red darken-3"
+            id="deleteBtn"
+            data-id="{{list._id}}"
+            type="button"
+          >Delete</button>
+        </div>
+      </div>
+    {{/each}}
+    <div class="links">
+      <button id="deleteAllBtn" type="button" class="btn delete">Delete All</button>
+      <a href="/todos/create" class="btn create">Create new Todo</a>
+    </div>
+  {{else}}
+    <h1>No todo</h1>
+    <div class="links">
+      <button id="deleteAllBtn" type="button" class="btn delete">Delete All</button>
+      <a href="/todos/create" class="btn create">Create new Todo</a>
+    </div>
+  {{/if}}
+</div>

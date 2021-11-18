@@ -1,0 +1,21 @@
+<div class="row parent">
+  <div class="col s12">
+    <h2>Update todo</h2>
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="title" type="text" value="{{todo.title}}" class="validate" />
+        <label for="last_name">Title</label>
+      </div>
+      <div class="input-field col s12">
+        <input id="user" type="text" value="{{todo.user}}" class="validate" />
+        <label for="last_name">User</label>
+      </div>
+      <button
+        data-id="{{todo._id}}"
+        type="button"
+        id="updateBtn"
+        class="btn waves-effect waves-teal"
+      >Update</button>
+    </div>
+  </div>
+</div>
